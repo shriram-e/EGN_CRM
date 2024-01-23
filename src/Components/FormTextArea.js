@@ -5,7 +5,7 @@ const FormTextArea = (props) => {
         <div>
             <label>{props.label}</label>
             <br />
-            <textarea placeholder={props.Placeholder} type={props.type} name={props.name} disabled={props.disabled} value={props.values} />
+            <textarea required={props.req} placeholder={props.Placeholder} type={props.type} name={props.name} disabled={props.disabled} value={props.values} />
             <br />
             <br />
         </div>

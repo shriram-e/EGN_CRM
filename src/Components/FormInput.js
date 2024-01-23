@@ -5,7 +5,7 @@ const FormInput = (props) => {
         <div>
             <label>{props.label}</label>
             <br />
-            <input required placeholder={props.Placeholder} type={props.type} name={props.name} disabled={props.disabled} value={props.values}></input>
+            <input required={props.req} placeholder={props.Placeholder} type={props.type} name={props.name} disabled={props.disabled} value={props.values}></input>
             <br />
             <br />
         </div>

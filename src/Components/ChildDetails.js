@@ -3,11 +3,11 @@ import FormInput from './FormInput';
 import FormTextArea from './FormTextArea';
 import FormRadio from './FormRadio';
 
-const ChildDetails = () => {
+const ChildDetails = (props) => {
     return (
         <div>
-            <p>Child Details</p>
-            <FormInput label='Full Name' Placeholder='e.g John Barry' type='text' name='Child_Full_Name' />
+            <p>Child Details - {props.Nos}</p>
+            <FormInput label='Full Name' Placeholder='Child Name' type='text' name='Child_Full_Name' />
             <FormInput label='Date of birth' Placeholder='DD/MM/YYYY' type='text' name='Child_DOB' />
         </div>
     )

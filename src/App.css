@@ -1,7 +1,8 @@
 body {
-  /*background-color: #b9c5d1;*/
+  /* background-color: #b9c5d1; */
   /*background: linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));*/
   background: linear-gradient(117.9deg, rgb(183, 248, 193) -3.5%, rgb(169, 212, 250) 53.8%, rgb(148, 231, 255) 100.4%);
+  /* background-color: #a64357; */
   font-family: Montserrat, arial, verdana;
   display: flex;
   justify-content: center;
@@ -13,13 +14,16 @@ div.Div_Main {
   border-radius: 30px;
   background-color: white;
   border: 1px;
+  border-color: #666;
+  box-shadow: 3px 3px 5px;
 }
 
 p.heading {
   text-align: center;
-  color: linear-gradient(to right, #553c9a 45%, #ee4b2b);
+  text-transform: uppercase;
+  /* linear-gradient(to right, #553c9a 45%, #ee4b2b);color: linear-gradient(to right, #553c9a 45%, #ee4b2b); */
+  /*text-decoration-color: linear-gradient(to right, #553c9a 45%, #ee4b2b);*/
   font-size: 20px;
-  text-shadow: 1px 1px 3px;
   font-weight: bold;
 }
 
@@ -82,4 +86,8 @@ div.Primary_Main button {
 
 div.btnsubmit {
   text-align: center;
+}
+
+label.removechild {
+  color: blue;
 }
