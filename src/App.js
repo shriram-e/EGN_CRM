@@ -21,6 +21,30 @@ function App() {
     const Data = new FormData(e.target);
     const Jdata = Object.fromEntries(Data.entries())
     console.log(Jdata)
+
+    const options = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json-patch+json' },
+      body: JSON.stringify(Jdata)
+    }
+
+    const url = '' //Add API URL
+
+    fetch(url, options)
+      .then(response => {
+        if (response.ok) {
+          console.log("Success")
+          return response.json()
+        }
+        else {
+          throw Error('Error in updating data')
+        }
+      })
+      .then(data => {
+        console.log(JSON.stringify(data))
+      })
+      .then(response => console.log(response))
+      .catch(error => console.error(error))
   }
 
   return (
